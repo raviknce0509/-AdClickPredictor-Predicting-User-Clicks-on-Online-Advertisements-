@@ -1,42 +1,38 @@
 # AdClickPredictor
 "AdClickPredictor" is a repository exploring online ad engagement prediction using machine learning. It provides a dataset with user attributes and interaction outcomes, guiding users through preprocessing, modeling, and performance assessment via a comprehensive Deepnote notebook. 
+<h1 align="center">Motivation</h1>
 
-Here is a step-by-step guide to follow for the project:
+The main motivation behind the project is "Targeted Advertising." At its most basic, targeted advertising can just mean that ads are chosen for their relevance to site content, in the assumption that they will then be relevant to the site audience as well. Online advertisers can use different methods to target a particular advertisement on the user based on its traits. Most companies do this as part of social media platforms like Facebook, LinkedIn, etc. However, many times the process goes wrong, and the advertisement does not reach its target audience because it is sent out without actually understanding the probability of the occurring click.
 
-**Step 1: Project Setup and Dataset Understanding**
+<h2 align="center">Problem Statement</h2>
 
-. **Dataset Exploration:** Load the dataset into a Jupyter notebook and explore it. Understand the structure of the data, the features available, and the target variable ('Clicked on Ad').
+Publicizing is a multi-billion-dollar industry that acts as a bridge between companies and their customers. While most people are aware of the ads around them, they may not fully grasp the power of those advertisements and the impact of advertising in general. Research suggests that merely making someone aware of products, events, and brands increases the chances of that person actually buying those products, attending those events, or supporting those brands. Furthermore, if an ad captures a person's attention to the extent that they have an immediate, positive reaction to it, the chances of direct product engagement soar significantly.
 
-**Step 2: Data Preprocessing**
+In this project, we are going to work on an advertising dataset, indicating whether or not a particular internet user has clicked on an Advertisement.
 
-**Handling Missing Data:** Check for missing values in the dataset and decide how to handle them (imputation or removal).
+The goal is to predict if a user would click on an advertisement based on the features of the user. A few assumptions made as a part of this project are:
 
-**Feature Selection and Engineering:** Analyze the features and decide which ones are relevant for predicting ad clicks. Create new features if necessary.
+- Users taken into consideration are between the age group of 19 to 61.
+- There is almost an equal ratio of male and female internet users.
+- The ad topic is limited to what is given in the dataset.
 
-**Data Transformation:** Encode categorical features using techniques like one-hot encoding and scale numerical features if needed.
+<h2 align="center">Challenges Faced</h2>
 
-**Step 3: Model Development**
+We are highly motivated to work on the Ad click prediction dataset. A few challenges in this area of study include:
 
-**Data Splitting:** Split the dataset into training and testing sets to evaluate the model's performance.
+- There is very little publicly available data for ad clicks.
+- New online ads that are coming up are not targeted to a particular set of users. Using our prediction algorithm, companies will be able to target them to a specific set of users.
 
-**Choose Algorithm:** Select a suitable classification algorithm (e.g., logistic regression, decision trees, random forests, gradient boosting) based on your dataset's characteristics.
+<h2 align="center">Data Set</h2>
 
-**Model Training:** Train the selected model on the training dataset.
+The dataset consists of the following features:
 
-**Step 4: Model Evaluation and Tuning**
+- Daily Time Spent on Site: consumer time on the site in minutes.
+- Age: Customer age in years.
+- Area Income: Average income of the geographical area of the consumer.
+- Daily Internet Usage: Average minutes a day the consumer is on the internet.
+- Ad Topic Line: Headline of the advertisement.
+- City: City of the consumer.
+- Male: Whether or not the consumer was male.
+- Country: Country of the consumer.
 
-**Model Evaluation:** Evaluate the trained model's performance on the testing dataset using metrics like accuracy, precision, recall, F1-score, and ROC-AUC.
-
-**Hyperparameter Tuning:** Fine-tune the model's hyperparameters using techniques like grid search or random search to improve performance.
-
-**Step 5: Insights Extraction**
-
-**Generate Insights:** Utilize your trained model to predict ad clicks on new data points. Use the model to predict whether users will click on ads based on their features.
-
-**Interact with Model:** Create a user interface or script that allows you to input user data and get predictions from the model.
-
-**Step 6: Further Analysis and Refinement**
-
-**Analysis of Results:** Interpret the model's predictions to gain insights into user behavior and ad performance.
-
-**Refinement:** Based on the analysis, refine your marketing strategies and ad targeting approaches.
